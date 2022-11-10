@@ -7,7 +7,7 @@ document.getElementById('enviar').addEventListener('click' , ()=>{
 function hablar(texto) {
     console.log('ok '+texto);
     speechSynthesis.speak(
-            new SpeechSynthesisUtterance('hola')
+            new SpeechSynthesisUtterance(texto)
         );
     console.log('ok2');
 
